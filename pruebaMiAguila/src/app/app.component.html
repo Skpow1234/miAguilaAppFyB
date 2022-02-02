@@ -1,0 +1,53 @@
+<mat-toolbar>
+    <button mat-icon-button *ngIf="sidenav.mode ==='over'" (click)="sidenav.toggle()">
+        <mat-icon *ngIf="!sidenav.opened">
+            menu
+        </mat-icon>
+        <mat-icon *ngIf="sidenav.opened">
+            close
+        </mat-icon>
+    </button>
+    <img class="logo" src="https://scontent.fclo1-4.fna.fbcdn.net/v/t31.18172-8/23116727_1249990365146708_8686396604732884838_o.png?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHNk4pYGvQTvBtKs_9br6Gu_IxHuel4d4X8jEe56Xh3hQgqwW3cLR86ooipWv8VRE1WZVN_RLbY7w3nIFlvZh7K&_nc_ohc=ukP-0bmlqtEAX9JyLr3&_nc_oc=AQlNYYBkRJcTzXTEqQ8eomESg0nmDR-8jo46ihTL_jH7i75vOq-3uxgO-tInMkmm8t_0U0ttS29qNTPAeE46mxSr&_nc_ht=scontent.fclo1-4.fna&oh=00_AT_l6lDxnNTQDolE3FIAENRfakzicV7qfirPO9ChP_z7OA&oe=621EF71E">
+    MI AGUILA
+</mat-toolbar>
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav="matSidenav" >
+        <img class="avatar mat-elevation-z8" src="http://www.w3bai.com/w3css/img_avatar3.png">
+        <h4 class="nombre">Juan Felipe Hurtado</h4>
+        <p class="cargo">Desarrollador Frontend</p>
+        <button mat-button class= "menu-button">
+            <mat-icon>flight_land</mat-icon>
+            <span>Pedir Aguila</span>
+        </button>
+        <button mat-button class= "menu-button">
+            <mat-icon>flight_takeoff</mat-icon>
+            <span>Vuelos</span>
+        </button>
+        <button mat-button class= "menu-button">
+            <mat-icon>directions</mat-icon>
+            <span>Rutas</span>
+        </button>
+        <button mat-button class= "menu-button">
+            <mat-icon>account_circle</mat-icon>
+            <span>Administrar</span>
+        </button>
+        <button mat-button class= "menu-button">
+            <mat-icon>storage</mat-icon>
+            <span>Estadisticas</span>
+        </button>
+        <button mat-button class= "menu-button">
+            <mat-icon>payment</mat-icon>
+            <span>Medios de Pago</span>
+        </button>
+        <button mat-button class= "menu-button">
+            <mat-icon>logout</mat-icon>
+            <span>Cerrar sesion</span>
+        </button>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="content mat-elevation-z4">
+            Aqui va el mapa con su pintado
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
