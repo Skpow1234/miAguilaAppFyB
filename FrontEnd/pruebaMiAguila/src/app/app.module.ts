@@ -12,12 +12,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import {SocketIoConfig, SocketIoModule} from "ngx-socket-io";
+import { MapaComponent } from './mapa/mapa.component';
 
 const config: SocketIoConfig = {url: 'http://localhost:3000', options: {}};
 
 @NgModule({
   declarations: [
     AppComponent,
+    MapaComponent,
   ],
   imports: [
     BrowserModule,

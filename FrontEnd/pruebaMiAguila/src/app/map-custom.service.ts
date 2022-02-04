@@ -1,10 +1,11 @@
 import { EventEmitter, Injectable } from '@angular/core';
 import * as mapboxgl from 'mapbox-gl';
-import * as MapBoxGeocoder from '@mapbox/mapbox-gl-geocoder';
 import {environment} from "../environments/environment";
 import {HttpClient} from "@angular/common/http";
 import {Socket} from "ngx-socket-io";
 import * as MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
+
+
 
 @Injectable({
   providedIn: 'root'
@@ -66,7 +67,7 @@ export class MapCustomService {
       }
     });
   }
-  loadCoords(coords: any[][]): void {
+  loadCoords(coords: any[]): void {
 
     const url = [
       `https://api.mapbox.com/directions/v5/mapbox/driving/`,
